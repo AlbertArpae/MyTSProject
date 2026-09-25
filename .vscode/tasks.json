@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cmake",
+			"label": "CMake: compila",
+			"command": "build",
+			"targets": [
+				"[N/D - Seleziona kit]"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "Attività di compila del modello CMake"
+		}
+	]
+}

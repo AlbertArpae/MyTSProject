@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>TypeScript + Firebase Cloud</title>
+  
+  <!-- Mappa i moduli affinché il browser sappia dove scaricare Firebase -->
+  <script type="importmap">
+    {
+      "imports": {
+        "firebase/app": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
+        "firebase/firestore": "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>App Cloud Firestore</h1>
+
+  <input type="text" id="notaInput" placeholder="Scrivi una nota sul cloud...">
+  <button id="salvaBtn">Salva su Firebase</button>
+
+  <h3>Note salvate in tempo reale:</h3>
+  <ul id="listaNote"></ul>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
